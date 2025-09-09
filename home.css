@@ -1031,3 +1031,58 @@ mask-image: linear-gradient(to top, transparent 40%, #079097 80%) !important;
 .flower--4 .flower__leaf {
   background-image: linear-gradient(to top, #9370DB, #DA70D6);
 }
+
+
+/* ===== Additional flowers 5–11 ===== */
+.flower--5 { left: 2%;  bottom: 16vmin; transform: rotate(-12deg); animation: moving-flower-1 4.6s linear infinite; }
+.flower--6 { left: 12%; bottom: 20vmin; transform: rotate(18deg);  animation: moving-flower-2 5s linear infinite; }
+.flower--7 { left: 25%; bottom: 14vmin; transform: rotate(-15deg); animation: moving-flower-3 4.8s linear infinite; }
+.flower--8 { left: 42%; bottom: 18vmin; transform: rotate(10deg);  animation: moving-flower-2 5.2s linear infinite; }
+.flower--9 { left: 58%; bottom: 12vmin; transform: rotate(-6deg);  animation: moving-flower-1 4.4s linear infinite; }
+.flower--10{ left: 76%; bottom: 22vmin; transform: rotate(20deg);  animation: moving-flower-2 5.4s linear infinite; }
+.flower--11{ left: 95%; bottom: 15vmin; transform: rotate(-10deg); animation: moving-flower-3 5.1s linear infinite; }
+
+/* Vary stem heights & delays */
+.flower--5  .flower__line { height: 58vmin; animation-delay: .6s; }
+.flower--6  .flower__line { height: 62vmin; animation-delay: .9s; }
+.flower--7  .flower__line { height: 54vmin; animation-delay: 1.1s; }
+.flower--8  .flower__line { height: 68vmin; animation-delay: .7s; }
+.flower--9  .flower__line { height: 60vmin; animation-delay: 1.2s; }
+.flower--10 .flower__line { height: 66vmin; animation-delay: 1.4s; }
+.flower--11 .flower__line { height: 52vmin; animation-delay: 1.6s; }
+
+/* Slightly stagger leaf bloom timings to avoid sync */
+.flower__leafs--5  { animation-delay: 1.2s; }
+.flower__leafs--6  { animation-delay: 1.35s; }
+.flower__leafs--7  { animation-delay: 1.5s; }
+.flower__leafs--8  { animation-delay: 1.15s; }
+.flower__leafs--9  { animation-delay: 1.65s; }
+.flower__leafs--10 { animation-delay: 1.8s; }
+.flower__leafs--11 { animation-delay: 1.95s; }
+
+/* Optional color themes per flower */
+.flower--5  .flower__leaf { background-image: linear-gradient(to top, #ff758c, #ff7eb3); }
+.flower--6  .flower__leaf { background-image: linear-gradient(to top, #ffa751, #ffe259); }
+.flower--7  .flower__leaf { background-image: linear-gradient(to top, #43cea2, #185a9d); }
+.flower--8  .flower__leaf { background-image: linear-gradient(to top, #c2e59c, #64b3f4); }
+.flower--9  .flower__leaf { background-image: linear-gradient(to top, #f857a6, #ff5858); }
+.flower--10 .flower__leaf { background-image: linear-gradient(to top, #b06ab3, #4568dc); }
+.flower--11 .flower__leaf { background-image: linear-gradient(to top, #fbd3e9, #bb377d); }
+
+/* Stems and leaves variations to match colors */
+.flower--5  .flower__line { background-image: linear-gradient(to left, rgba(0,0,0,.2), transparent, rgba(255,255,255,.2)), linear-gradient(to top, transparent 10%, #0f5a61, #38bccd); }
+.flower--6  .flower__line { background-image: linear-gradient(to left, rgba(0,0,0,.2), transparent, rgba(255,255,255,.2)), linear-gradient(to top, transparent 10%, #145a12, #49c04a); }
+.flower--7  .flower__line { background-image: linear-gradient(to left, rgba(0,0,0,.2), transparent, rgba(255,255,255,.2)), linear-gradient(to top, transparent 10%, #1b3b82, #49a7ff); }
+.flower--8  .flower__line { background-image: linear-gradient(to left, rgba(0,0,0,.2), transparent, rgba(255,255,255,.2)), linear-gradient(to top, transparent 10%, #7a147a, #d639b6); }
+.flower--9  .flower__line { background-image: linear-gradient(to left, rgba(0,0,0,.2), transparent, rgba(255,255,255,.2)), linear-gradient(to top, transparent 10%, #7a4b14, #d6a339); }
+.flower--10 .flower__line { background-image: linear-gradient(to left, rgba(0,0,0,.2), transparent, rgba(255,255,255,.2)), linear-gradient(to top, transparent 10%, #14615a, #39d6c6); }
+.flower--11 .flower__line { background-image: linear-gradient(to left, rgba(0,0,0,.2), transparent, rgba(255,255,255,.2)), linear-gradient(to top, transparent 10%, #614114, #d6a339); }
+
+/* Leaf-on-stem tint */
+.flower--5  .flower__line__leaf { background-image: linear-gradient(to top, rgba(20,117,122,.4), #ff7eb3); }
+.flower--6  .flower__line__leaf { background-image: linear-gradient(to top, rgba(20,117,122,.4), #ffe259); }
+.flower--7  .flower__line__leaf { background-image: linear-gradient(to top, rgba(20,117,122,.4), #43cea2); }
+.flower--8  .flower__line__leaf { background-image: linear-gradient(to top, rgba(20,117,122,.4), #64b3f4); }
+.flower--9  .flower__line__leaf { background-image: linear-gradient(to top, rgba(20,117,122,.4), #ff5858); }
+.flower--10 .flower__line__leaf { background-image: linear-gradient(to top, rgba(20,117,122,.4), #4568dc); }
+.flower--11 .flower__line__leaf { background-image: linear-gradient(to top, rgba(20,117,122,.4), #bb377d); }
